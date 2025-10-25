@@ -20,6 +20,9 @@ public class LogEntry {
     @Column(name = "level", length = 32)
     private String level;
 
+    @Column(name = "category", length = 32)
+    private String category;
+
     @Column(name = "message", columnDefinition = "TEXT")
     private String message;
 

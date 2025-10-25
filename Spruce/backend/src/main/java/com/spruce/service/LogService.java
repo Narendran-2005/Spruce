@@ -14,104 +14,72 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/**
- * Centralized logging service for Spruce demo.
- * Logs all cryptographic operations, handshakes, and message exchanges.
- */
 @Service
 @Slf4j
 @RequiredArgsConstructor
 public class LogService {
-    
+
     private static final String LOG_FILE = "logs/spruce-demo.log";
     private final List<String> logBuffer = new CopyOnWriteArrayList<>();
     private final DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS");
     private final LogRepository logRepository;
-    
-    /**
-     * Log an info message with timestamp.
-     */
-    public void logInfo(String message) {
+
+    private void log(String level, String category, String message) {
         String timestamp = LocalDateTime.now().format(formatter);
-        String logEntry = String.format("[%s] [INFO] %s", timestamp, message);
-        
+        String logEntry = String.format("[%s] [%s] [%s] %s", timestamp, level, category, message);
+
         log.info(logEntry);
         logBuffer.add(logEntry);
         writeToFile(logEntry);
-        persistToDatabase("INFO", message);
-        
-        // Keep only last 1000 entries in memory
+        persistToDatabase(level, category, message);
+
         if (logBuffer.size() > 1000) {
             logBuffer.remove(0);
         }
     }
-    
-    /**
-     * Log a handshake event.
-     */
+
+    public void logInfo(String message) {
+        log("INFO", "GENERAL", message);
+    }
+
     public void logHandshake(String event, String details) {
-        String message = String.format("[HANDSHAKE] %s | %s", event, details);
-        logInfo(message);
+        log("INFO", "HANDSHAKE", String.format("%s | %s", event, details));
     }
-    
-    /**
-     * Log a signature verification event.
-     */
+
     public void logSignature(String event, String details) {
-        String message = String.format("[SIGNATURE] %s | %s", event, details);
-        logInfo(message);
+        log("INFO", "SIGNATURE", String.format("%s | %s", event, details));
     }
-    
-    /**
-     * Log a session establishment event.
-     */
+
     public void logSession(String event, String details) {
-        String message = String.format("[SESSION] %s | %s", event, details);
-        logInfo(message);
+        log("INFO", "SESSION", String.format("%s | %s", event, details));
     }
-    
-    /**
-     * Log a message encryption/decryption event.
-     */
+
     public void logMessage(String event, String details) {
-        String message = String.format("[MESSAGE] %s | %s", event, details);
-        logInfo(message);
+        log("INFO", "MESSAGE", String.format("%s | %s", event, details));
     }
-    
-    /**
-     * Log a cryptographic operation.
-     */
+
     public void logCrypto(String operation, String details) {
-        String message = String.format("[CRYPTO] %s | %s", operation, details);
-        logInfo(message);
+        log("INFO", "CRYPTO", String.format("%s | %s", operation, details));
     }
-    
-    /**
-     * Get the last N log entries for admin console.
-     */
+
     public List<String> getRecentLogs(int count) {
-        // Try reading from DB first
         try {
-            List<LogEntry> recent = logRepository.findRecent(PageRequest.of(0, Math.max(1, count)));
+            List<LogEntry> recent = logRepository.findRecent(PageRequest.of(0, count));
             if (!recent.isEmpty()) {
-                List<String> lines = new ArrayList<>(recent.size());
+                List<String> lines = new ArrayList<>();
                 for (LogEntry e : recent) {
-                    String ts = e.getCreatedAt() != null ? e.getCreatedAt().format(formatter) : LocalDateTime.now().format(formatter);
-                    String lvl = e.getLevel() != null ? e.getLevel() : "INFO";
-                    lines.add(String.format("[%s] [%s] %s", ts, lvl, e.getMessage()));
+                    String ts = e.getCreatedAt() != null ? e.getCreatedAt().format(formatter) : "";
+                    lines.add(String.format("[%s] [%s] [%s] %s", ts, e.getLevel(), e.getCategory(), e.getMessage()));
                 }
                 return lines;
             }
         } catch (Exception ignored) {
-            // fall back to in-memory buffer
+            // fallback to in-memory
         }
         int startIndex = Math.max(0, logBuffer.size() - count);
         return new ArrayList<>(logBuffer.subList(startIndex, logBuffer.size()));
     }
-    
-    /**
-     * Write log entry to file.
-     */
+
     private void writeToFile(String logEntry) {
         try (FileWriter writer = new FileWriter(LOG_FILE, true)) {
             writer.write(logEntry + System.lineSeparator());
@@ -120,10 +88,11 @@ public class LogService {
         }
     }
 
-    private void persistToDatabase(String level, String message) {
+    private void persistToDatabase(String level, String category, String message) {
         try {
             LogEntry entry = LogEntry.builder()
                 .level(level)
+                .category(category)
                 .message(message)
                 .createdAt(LocalDateTime.now())
                 .build();
