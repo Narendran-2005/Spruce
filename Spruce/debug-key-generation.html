@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Key Generation</title>
+</head>
+<body>
+    <h1>Debug Key Generation</h1>
+    <div id="output"></div>
+    
+    <script type="module">
+        // Import the crypto service
+        import { cryptoService } from './src/services/cryptoService.js';
+        
+        async function testKeyGeneration() {
+            const output = document.getElementById('output');
+            
+            try {
+                output.innerHTML += '<p>Starting key generation...</p>';
+                
+                const keys = await cryptoService.generateKeyPair();
+                
+                output.innerHTML += '<p>✅ Key generation successful!</p>';
+                output.innerHTML += '<p>X25519 Public Key: ' + keys.x25519PublicKey.substring(0, 50) + '...</p>';
+                output.innerHTML += '<p>Kyber Public Key: ' + keys.kyberPublicKey.substring(0, 50) + '...</p>';
+                output.innerHTML += '<p>Dilithium Public Key: ' + keys.dilithiumPublicKey.substring(0, 50) + '...</p>';
+                
+            } catch (error) {
+                output.innerHTML += '<p>❌ Key generation failed: ' + error.message + '</p>';
+                console.error('Key generation error:', error);
+            }
+        }
+        
+        testKeyGeneration();
+    </script>
+</body>
+</html>
+
+

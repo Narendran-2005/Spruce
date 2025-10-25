@@ -1,0 +1,477 @@
+2025-10-24 09:56:58.298 [main] INFO  com.spruce.SpruceApplication - Starting SpruceApplication using Java 17.0.12 with PID 21728 (D:\Projects\Spruce\backend\target\classes started by NAREN in D:\Projects\Spruce\backend)
+2025-10-24 09:56:58.314 [main] INFO  com.spruce.SpruceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-10-24 09:56:59.576 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-24 09:56:59.679 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2025-10-24 09:57:00.719 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-10-24 09:57:00.745 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-10-24 09:57:00.746 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-10-24 09:57:00.860 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-10-24 09:57:00.861 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2419 ms
+2025-10-24 09:57:00.911 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-10-24 09:57:01.226 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:spruce user=SA
+2025-10-24 09:57:01.231 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-10-24 09:57:01.252 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:spruce'
+2025-10-24 09:57:01.470 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-24 09:57:01.567 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-10-24 09:57:01.634 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-10-24 09:57:02.107 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-24 09:57:02.181 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-24 09:57:03.498 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-24 09:57:03.577 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-24 09:57:03.960 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-10-24 09:57:04.896 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-24 09:57:05.819 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-10-24 09:57:05.834 [main] INFO  com.spruce.SpruceApplication - Started SpruceApplication in 8.552 seconds (process running for 9.36)
+2025-10-24 09:57:41.622 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-24 09:57:41.623 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-10-24 09:57:41.625 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-10-24 09:57:41.651 [http-nio-8080-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/auth/register' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-10-24 09:57:42.062 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 09:57:42.062] [INFO] [MESSAGE] USER | Registering user: testuser
+2025-10-24 09:57:42.151 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 09:57:42.151] [INFO] [MESSAGE] USER | User registered successfully: testuser
+2025-10-24 09:57:54.534 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 09:57:54.534] [INFO] [MESSAGE] USER | Authentication successful for: testuser
+2025-10-24 09:57:57.928 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 09:57:57.928] [INFO] [MESSAGE] USER | Registering user: Vasanthabalan
+2025-10-24 09:57:57.934 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 09:57:57.934] [INFO] [MESSAGE] USER | User registered successfully: Vasanthabalan
+2025-10-24 09:59:02.673 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:02.673] [INFO] [MESSAGE] USER | Registering user: Yokesh
+2025-10-24 09:59:02.674 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:02.674] [INFO] [MESSAGE] USER | User registered successfully: Yokesh
+2025-10-24 09:59:13.598 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:13.598] [INFO] [HANDSHAKE] Handshake data stored | Recipient: Yokesh, Sender: Vasanthabalan
+2025-10-24 09:59:15.181 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 09:59:15.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:18.191 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:18.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:21.189 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 09:59:21.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:24.184 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:24.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:27.182 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 09:59:27.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:30.191 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 09:59:30.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:33.192 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 09:59:33.192] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:36.176 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 09:59:36.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:39.188 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 09:59:39.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:42.010 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 09:59:42.010] [INFO] [MESSAGE] Encrypted message relayed | From Vasanthabalan ? Yokesh
+2025-10-24 09:59:42.190 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:42.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:42.214 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:42.214] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:44.221 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 09:59:44.220] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:44.248 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 09:59:44.248] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:46.253 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:46.253] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:46.279 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:46.279] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:48.290 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 09:59:48.290] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:48.334 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 09:59:48.332] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:50.335 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:50.335] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:50.367 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:50.367] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:52.379 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 09:59:52.379] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:52.408 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 09:59:52.408] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:54.416 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:54.416] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:54.456 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:54.456] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:56.470 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 09:59:56.470] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:56.514 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 09:59:56.514] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 09:59:58.522 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 09:59:58.522] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 09:59:58.560 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 09:59:58.560] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:00.578 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:00:00.578] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:00.612 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:00:00.612] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:02.620 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:00:02.620] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:02.658 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:00:02.658] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:05.189 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:00:05.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:05.218 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:00:05.218] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:08.192 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:00:08.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:08.218 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:00:08.218] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:11.188 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:00:11.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:11.220 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:00:11.220] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:14.184 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:00:14.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:14.215 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:14.215] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:17.177 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:00:17.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:17.211 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:17.211] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:20.185 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:20.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:20.213 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:00:20.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:22.221 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:22.221] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:22.265 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:00:22.265] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:24.273 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:24.273] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:24.297 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:00:24.297] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:26.303 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:26.303] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:26.337 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:00:26.337] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:28.353 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:28.353] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:28.384 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:00:28.384] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:31.178 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:31.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:31.206 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:00:31.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:34.192 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:34.192] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:34.220 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:00:34.220] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:37.189 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:00:37.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:37.216 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:00:37.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:40.186 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:00:40.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:40.213 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:00:40.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:43.181 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:00:43.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:43.207 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:43.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:46.185 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:46.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:46.211 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:00:46.211] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:49.185 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:00:49.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:49.210 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:00:49.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:52.190 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:00:52.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:52.217 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:00:52.217] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:55.184 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:00:55.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:55.209 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:00:55.209] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:00:58.190 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:00:58.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:00:58.212 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:00:58.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:01.182 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:01:01.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:01.205 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:01.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:04.190 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:01:04.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:04.219 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:04.219] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:07.185 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:07.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:07.207 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:07.207] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:09.508 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:01:09.508] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:09.563 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:09.563] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:11.568 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:11.568] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:11.603 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:11.603] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:13.610 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:01:13.610] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:13.636 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:13.636] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:15.651 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:15.651] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:15.713 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:15.713] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:18.187 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:01:18.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:18.213 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:01:18.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:21.190 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:21.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:21.216 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:01:21.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:24.184 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:01:24.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:24.208 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:24.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:27.181 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:01:27.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:27.205 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:27.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:30.189 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:01:30.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:30.208 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:01:30.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:33.181 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:01:33.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:33.201 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:01:33.201] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:36.185 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:36.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:36.205 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:01:36.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:39.185 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:39.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:39.217 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:39.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:42.189 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:01:42.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:42.218 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:01:42.218] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:45.188 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:01:45.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:45.216 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:01:45.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:48.176 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:01:48.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:48.202 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:01:48.202] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:51.179 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:01:51.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:51.197 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:01:51.197] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:54.189 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:01:54.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:54.208 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:01:54.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:01:57.186 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:01:57.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:01:57.209 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:01:57.209] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:00.183 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:02:00.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:00.205 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:02:00.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:03.186 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:02:03.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:03.229 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:02:03.229] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:06.180 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:02:06.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:06.212 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:02:06.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:09.189 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:02:09.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:09.233 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:02:09.233] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:12.186 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:02:12.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:12.211 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:02:12.211] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:15.179 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:02:15.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:15.203 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:02:15.203] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:18.187 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:02:18.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:18.204 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:02:18.204] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:21.180 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:02:21.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:21.206 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:02:21.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:24.183 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:02:24.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:24.205 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:02:24.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:27.177 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:02:27.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:27.199 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:02:27.199] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:30.187 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:02:30.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:30.212 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:02:30.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:33.181 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:02:33.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:33.207 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:02:33.207] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:36.179 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:02:36.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:36.202 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:02:36.202] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:39.188 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:02:39.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:39.212 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:02:39.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:42.179 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:02:42.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:42.206 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:02:42.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:45.176 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:02:45.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:45.195 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:02:45.195] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:48.179 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:02:48.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:48.201 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:02:48.201] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:51.184 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:02:51.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:51.207 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:02:51.207] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:54.181 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:02:54.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:54.216 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:02:54.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:02:57.181 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:02:57.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:02:57.205 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:02:57.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:00.186 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:03:00.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:00.210 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:00.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:03.175 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:03:03.175] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:03.204 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:03:03.204] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:06.190 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:03:06.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:06.215 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:03:06.214] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:09.190 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:03:09.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:09.213 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:03:09.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:12.188 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:12.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:12.209 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:03:12.209] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:15.184 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:03:15.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:15.212 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:03:15.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:18.183 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:03:18.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:18.234 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:18.234] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:21.190 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:03:21.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:21.218 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:03:21.218] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:24.190 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:03:24.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:24.213 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:03:24.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:27.180 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:03:27.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:27.207 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:03:27.207] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:30.191 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:30.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:30.212 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:03:30.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:33.183 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:03:33.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:33.210 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:03:33.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:36.189 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:03:36.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:36.230 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:03:36.230] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:39.181 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:03:39.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:39.218 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:03:39.218] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:42.180 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:03:42.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:42.208 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:03:42.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:45.178 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:03:45.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:45.208 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:03:45.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:48.185 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:03:48.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:48.213 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:48.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:51.187 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:03:51.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:51.215 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:03:51.215] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:54.188 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:03:54.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:54.209 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:03:54.209] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:56.216 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:03:56.216] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:56.239 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:03:56.239] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:03:59.182 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:03:59.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:03:59.203 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:03:59.203] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:02.181 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:04:02.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:02.201 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:04:02.201] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:05.182 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:04:05.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:05.203 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:04:05.203] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:08.190 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:04:08.189] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:08.210 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:04:08.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:11.180 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:04:11.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:11.199 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:04:11.199] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:14.178 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:04:14.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:14.205 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:04:14.205] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:17.181 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:04:17.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:17.204 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:04:17.204] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:20.178 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:04:20.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:20.199 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:04:20.199] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:23.184 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:04:23.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:23.204 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:04:23.204] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:26.182 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:04:26.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:26.202 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:04:26.202] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:29.177 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:04:29.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:29.199 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:04:29.199] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:04:32.176 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:04:32.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:04:32.196 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:04:32.196] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:08:44.795 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:08:44.795] [INFO] [MESSAGE] USER | Authentication successful for: Vasanthabalan
+2025-10-24 10:08:54.197 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:08:54.197] [INFO] [MESSAGE] USER | Authentication successful for: Yokesh
+2025-10-24 10:08:56.248 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:08:56.248] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:08:56.286 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:08:56.286] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:08:58.520 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:08:58.520] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:08:58.546 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:08:58.546] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:01.182 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:01.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:09:01.214 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:01.214] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:04.193 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:04.192] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 1
+2025-10-24 10:09:04.219 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:04.219] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:06.366 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:09:06.366] [INFO] [HANDSHAKE] Handshake data stored | Recipient: Yokesh, Sender: Vasanthabalan
+2025-10-24 10:09:07.188 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:09:07.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:07.215 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:09:07.215] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:10.188 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:09:10.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:10.217 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:09:10.217] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:13.185 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:09:13.185] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:13.210 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:09:13.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:16.188 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:09:16.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:16.216 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:09:16.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 1
+2025-10-24 10:09:16.449 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:16.449] [INFO] [MESSAGE] Encrypted message relayed | From Vasanthabalan ? Yokesh
+2025-10-24 10:09:18.238 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:09:18.238] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:18.265 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:18.265] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:20.268 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:09:20.268] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:20.299 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:20.299] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:22.308 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:09:22.308] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:22.342 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:22.342] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:25.060 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:09:25.060] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:25.101 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:25.101] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:27.115 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:09:27.115] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:27.147 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:27.147] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:29.181 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:29.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:29.201 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:29.201] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:31.212 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:31.212] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:31.246 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:31.246] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:33.252 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:33.252] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:33.279 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:33.279] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:35.291 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:35.291] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:35.315 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:35.315] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:37.317 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:37.317] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:37.346 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:37.346] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:39.352 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:39.352] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:39.375 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:39.375] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:41.391 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:41.391] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:41.410 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:41.410] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:43.427 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:43.427] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:43.451 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:43.451] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:45.459 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:45.459] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:45.482 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:45.482] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:47.489 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:47.488] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:47.510 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:47.510] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:49.524 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:09:49.524] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:49.564 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:49.564] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:51.559 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:09:51.559] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:51.588 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:51.588] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:52.629 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:09:52.629] [INFO] [MESSAGE] Encrypted message relayed | From Yokesh ? Vasanthabalan
+2025-10-24 10:09:53.193 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:09:53.193] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:09:53.601 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:53.601] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:53.620 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:09:53.620] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:54.379 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:09:54.379] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:09:56.178 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:09:56.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:56.197 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:09:56.197] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:56.384 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:09:56.384] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:09:58.214 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:09:58.214] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:09:58.236 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:09:58.236] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:09:59.194 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:09:59.194] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:00.386 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:00.386] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:01.198 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:01.198] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:01.223 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:01.222] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:03.197 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:03.197] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:03.236 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:03.236] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:03.261 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:03.261] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:05.194 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:05.194] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:05.268 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:05.268] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:05.291 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:05.291] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:07.193 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:07.192] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:08.177 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:08.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:08.200 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:08.200] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:09.193 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:09.193] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:11.187 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:11.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:11.192 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:11.192] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:11.206 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:11.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:13.184 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:10:13.184] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:14.188 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:14.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:14.215 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:14.214] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:15.182 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:15.182] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:17.183 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:17.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:17.190 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:17.190] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:17.210 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:10:17.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:19.195 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:10:19.195] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:20.181 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:20.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:20.201 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:20.201] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:21.191 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:21.191] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:22.207 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:22.207] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:22.225 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:10:22.225] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:23.203 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:10:23.203] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:25.204 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:25.204] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:26.769 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:10:26.769] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:28.192 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:28.192] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:28.217 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:28.217] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:28.377 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:28.377] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:30.683 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:30.683] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:31.188 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:31.188] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:31.210 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:10:31.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:32.684 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:32.684] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:34.179 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:34.179] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:34.202 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:34.202] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:35.073 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:35.073] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:37.081 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:37.081] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:37.190 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:10:37.190] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:37.216 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:37.216] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:39.069 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:10:39.069] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:40.177 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:40.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 2
+2025-10-24 10:10:40.196 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:40.196] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:41.070 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:41.070] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:41.872 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:41.872] [INFO] [HANDSHAKE] Handshake data stored | Recipient: Yokesh, Sender: Vasanthabalan
+2025-10-24 10:10:43.182 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:10:43.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:43.212 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:10:43.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:43.890 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:43.890] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:45.219 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:10:45.219] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:45.245 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:45.245] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:46.188 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:46.188] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:47.888 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:47.888] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:48.180 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:10:48.180] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:48.200 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:48.200] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:49.887 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:10:49.887] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:51.186 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:10:51.186] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:51.210 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:51.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:51.889 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:51.889] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:53.891 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:53.891] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:54.178 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:10:54.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:54.198 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:10:54.198] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:55.882 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:10:55.882] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:10:57.181 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:10:57.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:10:57.203 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:10:57.203] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:10:58.193 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:10:58.193] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:00.187 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:00.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:00.193 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:00.193] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:00.208 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:00.208] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:02.201 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:02.201] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:03.187 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:11:03.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:03.213 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:11:03.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:04.197 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:04.197] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:06.178 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:06.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:06.189 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:06.189] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:06.207 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:06.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:08.182 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:08.182] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:09.177 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:11:09.177] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:09.198 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:09.198] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:10.192 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:10.192] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:12.174 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:12.174] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:12.184 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:12.184] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:12.214 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:12.214] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:14.213 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:14.213] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:15.176 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:15.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:15.196 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:15.196] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:16.198 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:16.198] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:18.184 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:18.184] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:18.199 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:18.199] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:18.229 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:18.229] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:20.189 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:20.189] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:21.183 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:21.183] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:21.200 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:21.200] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:22.184 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:22.184] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:24.187 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:24.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:24.195 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:24.195] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:24.213 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:24.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:26.184 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:11:26.184] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:27.181 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:27.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:27.200 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:27.200] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:28.190 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:28.190] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:30.191 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:30.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:30.199 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:30.199] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:30.219 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:11:30.219] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:32.188 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:11:32.188] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:33.191 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:33.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:33.210 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:33.210] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:34.188 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:34.188] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:36.178 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:36.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:36.186 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:11:36.186] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:36.204 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:11:36.204] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:38.187 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:11:38.187] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:39.191 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:39.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:39.213 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:39.213] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:40.194 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:40.194] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:42.181 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:42.181] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:42.186 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:11:42.186] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:42.198 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:11:42.198] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:44.182 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:44.182] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:45.193 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:45.193] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:45.224 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:45.224] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:46.301 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:46.301] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:48.172 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:11:48.172] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:48.189 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:48.189] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:48.196 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:48.196] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:50.184 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:50.184] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:51.494 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:11:51.494] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:51.523 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:51.523] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:52.207 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:52.207] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:54.176 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:54.176] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:54.183 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:11:54.183] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:54.199 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:11:54.199] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:56.185 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:11:56.185] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:57.187 [http-nio-8080-exec-2] INFO  com.spruce.service.LogService - [2025-10-24 10:11:57.187] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:11:57.206 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:11:57.206] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:11:57.887 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:11:57.887] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:11:59.886 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:11:59.886] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:00.175 [http-nio-8080-exec-4] INFO  com.spruce.service.LogService - [2025-10-24 10:12:00.175] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:12:00.193 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:12:00.193] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:12:02.186 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:12:02.186] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:03.178 [http-nio-8080-exec-7] INFO  com.spruce.service.LogService - [2025-10-24 10:12:03.178] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:12:03.197 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:12:03.197] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:12:04.189 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:12:04.189] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:06.193 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:12:06.193] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:12:06.197 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:12:06.197] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:06.344 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:12:06.344] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:12:08.183 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:12:08.183] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:09.191 [http-nio-8080-exec-9] INFO  com.spruce.service.LogService - [2025-10-24 10:12:09.191] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:12:09.212 [http-nio-8080-exec-10] INFO  com.spruce.service.LogService - [2025-10-24 10:12:09.212] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:12:10.189 [http-nio-8080-exec-5] INFO  com.spruce.service.LogService - [2025-10-24 10:12:10.189] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:12.182 [http-nio-8080-exec-3] INFO  com.spruce.service.LogService - [2025-10-24 10:12:12.182] [INFO] [HANDSHAKE] Handshake data retrieved | User: Yokesh, Count: 3
+2025-10-24 10:12:12.198 [http-nio-8080-exec-6] INFO  com.spruce.service.LogService - [2025-10-24 10:12:12.198] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1
+2025-10-24 10:12:12.221 [http-nio-8080-exec-8] INFO  com.spruce.service.LogService - [2025-10-24 10:12:12.221] [INFO] [MESSAGE] Retrieved messages | User: Yokesh, Count: 2
+2025-10-24 10:12:13.881 [http-nio-8080-exec-1] INFO  com.spruce.service.LogService - [2025-10-24 10:12:13.881] [INFO] [MESSAGE] Retrieved messages | User: Vasanthabalan, Count: 1

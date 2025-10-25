@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  body {
+    @apply bg-quantum-900 text-quantum-100;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-spruce-600 hover:bg-spruce-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .btn-secondary {
+    @apply bg-quantum-700 hover:bg-quantum-600 text-quantum-100 font-medium py-2 px-4 rounded-lg transition-colors duration-200;
+  }
+  
+  .input-field {
+    @apply bg-quantum-800 border border-quantum-600 text-quantum-100 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-spruce-500 focus:border-transparent;
+  }
+  
+  .card {
+    @apply bg-quantum-800 border border-quantum-700 rounded-lg p-6 shadow-lg;
+  }
+  
+  .terminal {
+    @apply bg-quantum-900 border border-quantum-700 rounded-lg p-4 font-mono text-sm;
+  }
+  
+  .status-indicator {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+  
+  .status-connected {
+    @apply bg-green-900 text-green-300;
+  }
+  
+  .status-disconnected {
+    @apply bg-red-900 text-red-300;
+  }
+  
+  .status-handshake {
+    @apply bg-yellow-900 text-yellow-300;
+  }
+}
